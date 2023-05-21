@@ -13,6 +13,7 @@
     padding-left: 1rem;
     font-size: 0.875rem;
     margin-bottom: 0;
+    padding-bottom: 0;
     background-color: var(--dark);
     display: flex;
     justify-content: space-between;
@@ -34,7 +35,7 @@
 }
 
 .navbar a:hover {
-    text-shadow: 2px 2px 8px var(--green);
+    text-shadow: 2px 2px 8px var(--blue);
 }
 
 .signup-btnn {
@@ -42,7 +43,7 @@
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
-    background-color: var(--green);
+    background-color: var(--blue);
     color: white;
     font-weight: bold;
     border-radius: 0.188rem;

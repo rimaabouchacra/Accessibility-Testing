@@ -1,0 +1,16 @@
+.all-btn {
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--blue);
+    color: white;
+    font-weight: bold;
+    border-radius: 0.188rem;
+    border: 1px solid var(--blue);
+    cursor: pointer;
+}
+.all-btn:hover {
+    background-color: var(--dark-blue);
+    border: 1px solid var(--dark-blue);
+}

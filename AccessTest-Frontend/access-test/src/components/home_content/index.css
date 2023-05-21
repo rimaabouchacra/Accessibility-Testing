@@ -1,0 +1,30 @@
+.headerr {
+    width: 100%;
+    margin-bottom: 1rem;
+
+}
+.content{
+    margin: 3rem;
+}
+.label{
+    font-size: 14px;
+}
+.input-url{
+    border-radius: 5px;
+    width: 90%;
+    height: 2.5rem;
+    border: 1px solid black;
+    margin-top: 0.5rem;
+}
+.input-url:focus{
+    border: none;
+    box-shadow: 0px 0px 10px var(--blue);
+    outline: 2px solid var(--blue);
+}
+
+@media only screen and (max-width: 768px) {
+    .headerr {
+        max-width: 100%;
+    }
+
+}

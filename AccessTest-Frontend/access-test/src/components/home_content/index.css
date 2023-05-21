@@ -6,12 +6,17 @@
 .content{
     margin: 3rem;
 }
+.def-paragraph{
+    margin-bottom: 3rem;
+    width: 95%;
+    font-size: 17px;
+}
 .label{
     font-size: 14px;
 }
 .input-url{
     border-radius: 5px;
-    width: 90%;
+    width: 91%;
     height: 2.5rem;
     border: 1px solid black;
     margin-top: 0.5rem;

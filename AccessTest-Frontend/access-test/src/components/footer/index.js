@@ -8,12 +8,12 @@ function Footer() {
   return (
     <footer className="footer">
         <img src={logo2} alt="website logo" />
-        <div>
-           <img src={fcb} alt="facebook icon" />
-           <img src={insta} alt="instagram icon" />
-           <img src={linkedin} alt="linkedin icon" />
+        <div className="social-media-icons">
+           <img className="icon" src={fcb} alt="facebook icon" />
+           <img className="icon" src={insta} alt="instagram icon" />
+           <img className="icon" src={linkedin} alt="linkedin icon" />
         </div>
-        <p>Copyright © 2023 AccessTest. All rights reserved.</p>
+        <p className="copyright">Copyright © 2023 AccessTest. All rights reserved.</p>
       
     </footer>
   );

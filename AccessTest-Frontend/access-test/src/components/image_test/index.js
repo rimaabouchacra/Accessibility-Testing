@@ -118,7 +118,7 @@ const TestImage = () => {
                <tr>
                 <td>Image4</td>
                 <td className='failed'>Failed</td>
-                {/* <td>Missing alt</td> */}
+                <td>Missing alt</td>
               </tr>
             </tbody>
           </table>

@@ -1,13 +1,13 @@
 import Navbar from "../../components/navbar";
-import Loginn from "../../components/login";
+import Signup from "../../components/signup";
 
 
-const Login=()=>{
+const Register=()=>{
     return(
         <div>
           <Navbar/>
-          <Loginn/>
+          <Signup/>
         </div>
     )
 }
-export default Login;
+export default Register;

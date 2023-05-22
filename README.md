@@ -51,7 +51,7 @@
 ### User Screens (web)
 | Login screen  | Register screen 
 | ---| ---| 
-| ![fsdaf](./readme/demo/Login.PNG) | ![fsdaf](./readme/demo/Signup.PNG) |
+| ![fsdaf](./readme/demo/login.PNG) | ![fsdaf](./readme/demo/Signup.PNG) |
 | Homepage screen | ImageTest screen |
 ![fsdaf](./readme/demo/HomePage.gif) | ![fsdaf](./readme/demo/ImageTest.gif) |
 | HeadingTest | LinkTest Screen 

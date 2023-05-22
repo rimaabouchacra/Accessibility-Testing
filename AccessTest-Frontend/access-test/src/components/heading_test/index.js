@@ -1,5 +1,6 @@
 import '../image_test/index.css';
 import './index.css';
+import '../index.css';
 import React, { useState } from 'react';
 import imageTest from '../../images/image_test.PNG';
 import Modal from 'react-modal';
@@ -21,10 +22,8 @@ const TestHeading = () => {
   };
   return (
     <div>
-      <h1 className='test-title'>Test1: Image Testing</h1>
-      <h2 className='test-def'>Definition</h2>
-      <div className='paragraph-img'>
-        <p className='def-paragraph'>Images and graphics make content more pleasant and easier to understand for many people, and in particular for those with cognitive and learning disabilities. They serve as cues that are used by people with visual impairments, including people with low vision, to orient themselves in the content.<br/> Images must have text alternatives that describe the information or function represented by them. This ensures that images can be used by people with various disabilities. Let’s see how to provide appropriate text alternatives based on the purpose of the image. There are 7 types of images, each should have a specific alternative.</p>
+      <h1 className='test-title'>Test2: Headings Test</h1>
+      <div>
         <img className='img-test' src={imageTest} alt="wrong and right alt text" />
       </div>
       <ol className='def-paragraph image-types'>

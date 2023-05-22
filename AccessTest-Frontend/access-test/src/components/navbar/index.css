@@ -51,6 +51,14 @@
     border-radius: 0.188rem;
 }
 
+.navbar .links a.active {
+    color: var(--blue);
+    text-shadow: 2px 2px 8px var(--blue);
+}
+.navbar .links-register a.active {
+    color: var(--blue);
+    text-shadow: 2px 2px 8px var(--blue);
+}
 .links-register {
     display: flex;
     justify-content: center;

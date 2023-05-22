@@ -2,8 +2,9 @@ import '../index.css';
 import './index.css';
 import React, { useState } from 'react';
 import header from '../../images/Header.png';
-
+import { useNavigate } from 'react-router-dom';
 const Content = () => {
+  const navigate = useNavigate();
   const [url, setUrl] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
@@ -18,6 +19,10 @@ const Content = () => {
     if (!url.match(/^https?:\/\/.+$/)) {
       setErrorMessage('Please enter a valid URL starting with http:// or https://');
       return;
+    }
+    else{
+            navigate('/imagetest');
+
     }
 
   };

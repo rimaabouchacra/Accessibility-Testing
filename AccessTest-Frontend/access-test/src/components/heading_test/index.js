@@ -3,9 +3,12 @@ import './index.css';
 import '../index.css';
 import React, { useState } from 'react';
 import headingTest from '../../images/heading_levels.png';
+import { useNavigate } from 'react-router-dom';
+import arrow from '../../images/arrow.png'
 import Modal from 'react-modal';
 
 const TestHeading = () => {
+  const navigate = useNavigate();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -20,6 +23,10 @@ const TestHeading = () => {
   const closeModal = () => {
     setIsModalOpen(false);
   };
+
+  const handleclicknext=()=>{
+    navigate('/linkbuttontest');
+  }
   return (
     <div>
       <h1 className='test-title'>Test2: Headings Test</h1>
@@ -48,6 +55,10 @@ const TestHeading = () => {
       </ul>
       <div className='test-btn'>
         <button className='all-btn' onClick={openModal}>{isLoading ? 'Loading...' : 'Perform Heading Test'}</button>
+      </div>
+      <div className='next' onClick={handleclicknext}>
+        <img src={arrow} alt="" />
+        <p>Next</p>
       </div>
       
  <Modal 

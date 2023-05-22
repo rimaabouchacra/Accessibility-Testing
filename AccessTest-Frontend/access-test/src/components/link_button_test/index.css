@@ -7,3 +7,22 @@
     margin-bottom: -1rem;
     gap: 8.5rem;
 }
+.next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--blue);
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 990px) {
+    .paragraph-img2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 8.5rem;
+    }
+}

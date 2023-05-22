@@ -5,7 +5,7 @@ import TestHeading from "../../components/heading_test";
 const HeadingTest=()=>{
     return(
         <div>
-          <Navbar/>
+          <Navbar activePage="headingtest"/>
           <TestHeading/>
         </div>
     )

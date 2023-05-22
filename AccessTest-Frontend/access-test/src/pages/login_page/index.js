@@ -5,7 +5,7 @@ import Loginn from "../../components/login";
 const Login=()=>{
     return(
         <div>
-          <Navbar/>
+          <Navbar activePage="login"/>
           <Loginn/>
         </div>
     )

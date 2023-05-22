@@ -3,7 +3,6 @@ import './index.css';
 import React, { useState } from 'react';
 import imageLink from '../../images/links.PNG';
 import imageBtn from '../../images/Btn-Focus.png';
-import arrow from '../../images/arrow.png'
 import Modal from 'react-modal';
 
 const  TestLinkButton = () => {
@@ -53,10 +52,7 @@ const  TestLinkButton = () => {
       <div className='test-btn'>
         <button className='all-btn' onClick={openModal}>{isLoading ? 'Loading...' : 'Links and Buttons Testing'}</button>
       </div>
-      <div className='next'>
-        <img src={arrow} alt="" />
-        <p>Next</p>
-      </div>
+      
       
  <Modal 
         className="modal"

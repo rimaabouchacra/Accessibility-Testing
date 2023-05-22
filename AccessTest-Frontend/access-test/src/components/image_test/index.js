@@ -1,9 +1,12 @@
 import '../index.css';
 import './index.css';
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import imageTest from '../../images/image_test.PNG';
+import arrow from '../../images/arrow.png'
 import Modal from 'react-modal';
 const TestImage = () => {
+  const navigate = useNavigate();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -18,6 +21,10 @@ const TestImage = () => {
   const closeModal = () => {
     setIsModalOpen(false);
   };
+
+  const handleclicknext=()=>{
+    navigate('/headingtest');
+  }
   return (
     <div>
       <h1 className='test-title'>Test1: Image Testing</h1>
@@ -46,6 +53,10 @@ const TestImage = () => {
       </ul>
       <div className='test-btn'>
         <button className='all-btn' onClick={openModal}>{isLoading ? 'Loading...' : 'Perform Image Testing'}</button>
+      </div>
+      <div className='next' onClick={handleclicknext}>
+        <img src={arrow} alt="" />
+        <p>Next</p>
       </div>
       
  <Modal 

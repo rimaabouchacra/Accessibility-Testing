@@ -5,7 +5,7 @@ import TestLinkButton from "../../components/link_button_test";
 const LinkButtonTest=()=>{
     return(
         <div>
-          <Navbar/>
+          <Navbar activePage="linkbuttontest"/>
           <TestLinkButton/>
         </div>
     )

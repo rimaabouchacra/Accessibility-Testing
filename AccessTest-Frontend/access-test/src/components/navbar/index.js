@@ -2,8 +2,8 @@ import '../index.css'
 import './index.css'
 import React from 'react';
 import logo from '../../images/logo.png'
-
-const Navbar = () => {
+import { Link } from 'react-router-dom';
+const Navbar = ({ activePage }) => {
 
   return (
     <nav className='navbar'>
@@ -11,13 +11,13 @@ const Navbar = () => {
         <img className='nav-logo' src={logo} alt='logo' />
       </div>
       <div className='links'>
-        <a href='/'>Home</a>
-        <a href='imagetest'>ImageTest</a>
-        <a href='headingtest'>HeadingsTest</a>
-        <a href='linkbuttontest'>LinkButtonTest</a>
+        <Link className={activePage === 'home' ? 'active' : ''} to='/'>Home</Link>
+        <Link className={activePage === 'imagetest' ? 'active' : ''} to='/imagetest'>ImageTest</Link>
+        <Link className={activePage === 'headingtest' ? 'active' : ''} to='/headingtest'>HeadingsTest</Link>
+        <Link className={activePage === 'linkbuttontest' ? 'active' : ''} to='/linkbuttontest'>LinkButtonTest</Link>
       </div>
       <div className='links-register'>
-        <a href='login'>Login</a>
+        <Link className={activePage === 'login' ? 'active' : ''} to='/login'>Login</Link>
         <button className='all-btn'><a href="signup">Sign up free</a></button>
       </div>
     </nav>

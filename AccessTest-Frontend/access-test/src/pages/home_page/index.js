@@ -4,7 +4,7 @@ import Footer from '../../components/footer';
 const Homepage=()=>{
     return(
         <div>
-          <Navbar/>
+          <Navbar activePage="home"/>
           <Content/>
           <Footer/>
         </div>

@@ -5,7 +5,7 @@ import TestImage from "../../components/image_test";
 const ImageTest=()=>{
     return(
         <div>
-          <Navbar/>
+          <Navbar activePage="imagetest"/>
           <TestImage/>
         </div>
     )

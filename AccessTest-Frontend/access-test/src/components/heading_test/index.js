@@ -1,9 +1,10 @@
-import '../index.css';
+import '../image_test/index.css';
 import './index.css';
 import React, { useState } from 'react';
 import imageTest from '../../images/image_test.PNG';
 import Modal from 'react-modal';
-const TestImage = () => {
+
+const TestHeading = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -131,4 +132,4 @@ const TestImage = () => {
 };
 
 
-export default TestImage;
+export default TestHeading;

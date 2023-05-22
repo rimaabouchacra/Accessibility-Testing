@@ -5,7 +5,7 @@ body{
    text-align: center;
    margin: 2rem;
    font-size: 45px;
-   background-image: linear-gradient(to bottom left, var(--dark-blue), var(--light-blue));
+   background-image: linear-gradient(to bottom left, var(--dark-blue), var(--blue));
    color: transparent;
    background-clip: text;
    -webkit-background-clip: text;
@@ -80,6 +80,74 @@ b{
     display: flex;
     justify-content: center;
     margin: 2rem;
+}
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    align-content: center;
+    margin: 3rem;
+    margin-left: 18rem;
+    margin-bottom: 10rem;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 0 10px var(--blue);
+    padding: 20px;
+    max-width: 50rem;
+    width: 100%;
+    overflow-y: auto;
+    max-height:32rem;
+}
+.modal::-webkit-scrollbar {
+    width: 10px;
+}
+
+.modal::-webkit-scrollbar-thumb {
+    background-color: var(--blue);
+    border-radius: 6px;
+    width: 10px;
+}
+.label {
+    font-size: 14px;
+}
+.modal table {
+    border-collapse: collapse;
+    width: 31.25rem;
+    border: 1px solid black;
+
+}
+
+th,
+td {
+    text-align: center;
+    padding: 8px;
+    border: 1px solid black;
+
+}
+
+
+.table td,
+.table th {
+    border: 1px solid var(--blue);
+    padding: 8px;
+}
+
+.table th {
+    background-color: var(--blue);
+}
+
+.table tr:nth-child(even) {
+    background-color: #FFF;
+}
+
+.table tr:hover {
+    background-color: var(--light-blue);
+}
+
+.failed{
+    color: red;
 }
 @media only screen and (max-width: 990px) {
     .paragraph-img{

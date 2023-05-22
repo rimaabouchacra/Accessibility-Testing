@@ -28,7 +28,9 @@
     outline: 2px solid var(--blue);
     
 }
-
+.error{
+    color: red;
+}
 @media only screen and (max-width: 768px) {
     .headerr {
         max-width: 100%;

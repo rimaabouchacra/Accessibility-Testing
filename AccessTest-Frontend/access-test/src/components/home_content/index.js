@@ -32,7 +32,7 @@ const Content = () => {
             <h1>Accessibility Evaluation</h1>
             <label className='label' htmlFor="url">Enter your website URL:</label>
             <input
-              className="input-url"
+              className={`input-url ${errorMessage ? 'error' : ''}`}
               type="text"
               pattern="https?://.*"
               placeholder='https://www.example.com'

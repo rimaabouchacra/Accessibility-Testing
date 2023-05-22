@@ -1,7 +1,8 @@
 import '../index.css';
 import './index.css';
 import React, { useState } from 'react';
-import imageTest from '../../images/image_test.PNG';
+import imageLink from '../../images/links.PNG';
+import imageBtn from '../../images/Btn-Focus.png';
 import Modal from 'react-modal';
 const  TestLinkButton = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -23,8 +24,8 @@ const  TestLinkButton = () => {
       <h1 className='test-title'>Test1: Image Testing</h1>
       <h2 className='test-def'>Definition</h2>
       <div className='paragraph-img'>
-        <p className='def-paragraph'>Images and graphics make content more pleasant and easier to understand for many people, and in particular for those with cognitive and learning disabilities. They serve as cues that are used by people with visual impairments, including people with low vision, to orient themselves in the content.<br/> Images must have text alternatives that describe the information or function represented by them. This ensures that images can be used by people with various disabilities. Let’s see how to provide appropriate text alternatives based on the purpose of the image. There are 7 types of images, each should have a specific alternative.</p>
-        <img className='img-test' src={imageTest} alt="wrong and right alt text" />
+        <img  src={imageBtn} alt="Button Focus accessible and not accessible example" />
+        <img  src={imageLink} alt="example of accessible and not accessible links" />
       </div>
       <ol className='def-paragraph image-types'>
         <li><b>Informative images: </b>Should be accompanied by a short description conveying the essential information presented by the image.</li>

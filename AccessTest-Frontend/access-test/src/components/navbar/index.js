@@ -1,3 +1,4 @@
+import '../index.css'
 import './index.css'
 import React from 'react';
 import logo from '../../images/logo.png'
@@ -17,9 +18,7 @@ const Navbar = () => {
       </div>
       <div className='links-register'>
         <a href='login'>Login</a>
-        <a className='signup-btnn' href='signup'>
-          Sign up free
-        </a>
+        <button className='all-btn'><a href="signup">Sign up free</a></button>
       </div>
     </nav>
   );

@@ -3,7 +3,9 @@ import './index.css';
 import React, { useState } from 'react';
 import imageLink from '../../images/links.PNG';
 import imageBtn from '../../images/Btn-Focus.png';
+import arrow from '../../images/arrow.png'
 import Modal from 'react-modal';
+
 const  TestLinkButton = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -21,32 +23,39 @@ const  TestLinkButton = () => {
   };
   return (
     <div>
-      <h1 className='test-title'>Test1: Image Testing</h1>
-      <h2 className='test-def'>Definition</h2>
-      <div className='paragraph-img'>
+      <h1 className='test-title'>Test3: Links and Buttons Test</h1>
+      <div className='paragraph-img2'>
         <img  src={imageBtn} alt="Button Focus accessible and not accessible example" />
         <img  src={imageLink} alt="example of accessible and not accessible links" />
-      </div>
+      </div><br /><br />
+      <h2 className='test-deff'>Links&Buttons Accessibility Rules</h2>
       <ol className='def-paragraph image-types'>
-        <li><b>Informative images: </b>Should be accompanied by a short description conveying the essential information presented by the image.</li>
-        <li><b>Decorative images: </b>Provide a null text alternative (alt="") since the only purpose of an image is to add visual decoration to the page.</li>
-        <li><b>Functional images: </b>Should describe the function of a link or button instead of the visual image.</li>
-        <li><b>Images of text: </b>Should contain the same words as in the image.</li>
-        <li><b>Complex images: </b>Such as graphs and diagrams: Alternative should provide a complete text equivalent of the data or information provided in the image.</li>
-        <li><b>Groups of images: </b>If multiple images convey a single piece of information, the text alternative for one image should convey the information for the entire group.</li>
-        <li><b>Image maps: </b>The text alternative for an image that contains multiple clickable areas should provide an overall context for the set of links.</li>
-      </ol>
-      <h2 className='test-fail'>Possible failures for Test 1</h2>
+        <li>The purpose of the link or button should be determined by the link or button text.</li>
+        <li>For buttons, button text should describe what action the button will perform.</li>
+        <li>For links, link text should describe the content the link leads to (e.g., not 'Click here').</li>
+        <li>Links and buttons should have a visible focus state.</li>
+        <li>Using the keyboard, tab to each link or button - is there a visible indicator of which link or button currently has keyboard focus?</li>
+        <li>All links and buttons can be activated without a mouse, by keyboard alone.</li>
+        <li>Enter key for links.</li>
+        <li>Enter or spacebar for buttons.</li>
+        <li>Links and buttons should be correctly marked up with &lt;a&gt;, &lt;button&gt; , or &lt;input&gt;  tags.</li>
+     </ol>
+
+      <h2 className='test-fail'>Possible failures for Test 3</h2>
       <ul>
-        <li>Decorative images have non-null value for alt text</li>
-        <li>Image used as CAPTCHA lacks description</li>
-        <li>Image of meaningful text lacks alt text</li>
-        <li>Image of meaningful text has alt text that does not match the image text exactly</li>
-        <li>Meaningful image lacks alt text</li>
-        <li>Meaningful image has inappropriate or inadequate alt text</li>
+        <li>Link or button text does not convey purpose.</li>
+        <li>Generic text like 'Read more' or 'Click here' is used.</li>
+        <li>Link or button text otherwise fails to communicate purpose.</li>
+        <li>Lack of visible focus state.</li>
+        <li>Unable to activate link or button with keyboard alone.</li>
+        <li>Links or buttons marked up with &lt;div&gt;, &lt;span&gt;, or other markup and activated by JavaScript alone.</li>
       </ul>
       <div className='test-btn'>
-        <button className='all-btn' onClick={openModal}>{isLoading ? 'Loading...' : 'Perform Image Testing'}</button>
+        <button className='all-btn' onClick={openModal}>{isLoading ? 'Loading...' : 'Links and Buttons Testing'}</button>
+      </div>
+      <div className='next'>
+        <img src={arrow} alt="" />
+        <p>Next</p>
       </div>
       
  <Modal 
@@ -55,37 +64,33 @@ const  TestLinkButton = () => {
         onRequestClose={closeModal}
         contentLabel="Modal"
       >
-        <h2>Image Test Result</h2>
+        <h2>Links And Buttons Test Result</h2>
         <div>
           <label className='label' htmlFor="page">Page1</label>
           <table className='table'>
             <thead>
               <tr>
-                <th>Image</th>
+                <th>Link or Button</th>
                 <th>Status</th>
                 <th>Reason</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Image1</td>
+                <td>Link1</td>
                 <td className='failed'>Failed</td>
-                <td>Missing alt</td>
+                <td>Link text must be unique</td>
               </tr>
               <tr>
-                <td>Image2</td>
+                <td>Button2</td>
                 <td>Passed</td>
                 <td>-</td>
               </tr>
+              
               <tr>
-                <td>Image3</td>
-                <td>Passed</td>
-                <td>-</td>
-              </tr>
-              <tr>
-                <td>Image4</td>
+                <td>Link3</td>
                 <td className='failed'>Failed</td>
-                <td>Meaningless alt</td>
+                <td>Link text must describe the link target</td>
               </tr>
             </tbody>
           </table>
@@ -95,36 +100,31 @@ const  TestLinkButton = () => {
           <table className='table'>
             <thead>
               <tr>
-                <th>Image</th>
+                <th>Link or Button</th>
                 <th>Status</th>
                 <th>Reason</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Image1</td>
-                <td>Passed</td>
-                <td>-</td>
+                <td>Button1</td>
+                <td className='failed'>Failed</td>
+                <td>Button text doesn't describe action performed</td>
               </tr>
               <tr>
-                <td>Image2</td>
-                <td>Passed</td>
-                <td>-</td>
-              </tr>
-              <tr>
-                <td>Image3</td>
+                <td>Button2</td>
                 <td>Passed</td>
                 <td>-</td>
               </tr>
                <tr>
-                <td>Image4</td>
+                <td>Link5</td>
                 <td className='failed'>Failed</td>
-                <td>Missing alt</td>
+                <td>Link text must describe the link target</td>
               </tr>
             </tbody>
           </table>
         </div>
-        <h4 className='passed'>Passed Test!</h4>
+        <h4 className='failed'>Passed Test!</h4>
         <button className='all-btn' onClick={closeModal}>Close</button>
       </Modal>
     </div>

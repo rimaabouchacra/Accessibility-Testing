@@ -26,7 +26,7 @@ const TestHeading = () => {
       <div className='headingTest-img'>
         <img src={headingTest} alt="headings hierarchy representation" />
       </div>
-      <h2 className='test-deff'>Headings</h2>
+      <h2 className='test-deff'>Headings Accessibility Rules</h2>
       <ol className='def-paragraph image-types'>
         <li>The heading should describe the purpose or topic of the content that follows.</li>
         <li>All text that looks like a heading is marked up as a heading.</li>

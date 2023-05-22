@@ -1,0 +1,9 @@
+.paragraph-img2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem; 
+    margin-top: 4rem;
+    margin-bottom: -1rem;
+    gap: 8.5rem;
+}

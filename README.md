@@ -35,7 +35,7 @@
 
 | ImageTest screen  | HeadingTest screen |  LinksButtonsTest screen |
 | ---| ---| ---|
-| ![Landing](./readme/demo/ImageTest.png) | ![fsdaf](./readme/demo/HeadingsTest.png) | ![fsdaf](./readme/demo/Links&Butoons-Test.png) |
+| ![Landing](./readme/demo/ImageTest.png) | ![fsdaf](./readme/demo/HeadingsTest.png) | ![fsdaf](./readme/demo/Links&Butons-Test.png) |
 
 | Test1 screen  | Test2 screen |  Test3 screen |
 | ---| ---| ---|

@@ -105,7 +105,7 @@ const  TestLinkButton = () => {
               <tr>
                 <td>Button1</td>
                 <td className='failed'>Failed</td>
-                <td>Button text doesn't describe action performed</td>
+                <td>Button text doesn't describe action </td>
               </tr>
               <tr>
                 <td>Button2</td>

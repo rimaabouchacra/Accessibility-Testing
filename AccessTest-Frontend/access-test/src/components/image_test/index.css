@@ -22,7 +22,6 @@ body{
 .test-fail{
     margin-left: 5rem;
     margin-top: 3rem;
-    margin-bottom: -0.5rem;
     background-image: linear-gradient(to bottom left, darkred, red);
     color: transparent;
     background-clip: text;
@@ -49,6 +48,9 @@ li{
     margin: 0.5rem;
 }
 
+ul{
+    margin-left: 4.2rem;
+}
 ol.image-types {
     counter-reset: my-counter;
 }
@@ -67,6 +69,7 @@ ol.image-types li::before {
     -webkit-background-clip: text;
     margin-right: 5px;
 }
+
 b{
     background-image: linear-gradient(to bottom left, var(--darker-blue), var(--blue));
     color: transparent;

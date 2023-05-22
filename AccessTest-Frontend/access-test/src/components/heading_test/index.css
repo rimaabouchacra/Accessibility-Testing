@@ -1,0 +1,16 @@
+.headingTest-img{
+    text-align: center;
+    margin-top: 4rem;
+    margin-left: 4rem;
+}
+.heading-subpoints{
+    margin-top: -2rem;
+    margin-left: 7rem;
+}
+.test-deff{
+    margin-left: 5rem;
+    margin-top: 3rem;
+    background-image: linear-gradient(to bottom left, var(--darker-blue), var(--blue));        color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}

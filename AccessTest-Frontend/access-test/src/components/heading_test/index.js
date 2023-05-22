@@ -2,7 +2,7 @@ import '../image_test/index.css';
 import './index.css';
 import '../index.css';
 import React, { useState } from 'react';
-import imageTest from '../../images/image_test.PNG';
+import headingTest from '../../images/heading_levels.png';
 import Modal from 'react-modal';
 
 const TestHeading = () => {
@@ -23,29 +23,31 @@ const TestHeading = () => {
   return (
     <div>
       <h1 className='test-title'>Test2: Headings Test</h1>
-      <div>
-        <img className='img-test' src={imageTest} alt="wrong and right alt text" />
+      <div className='headingTest-img'>
+        <img src={headingTest} alt="headings hierarchy representation" />
       </div>
+      <h2 className='test-deff'>Headings</h2>
       <ol className='def-paragraph image-types'>
-        <li><b>Informative images: </b>Should be accompanied by a short description conveying the essential information presented by the image.</li>
-        <li><b>Decorative images: </b>Provide a null text alternative (alt="") since the only purpose of an image is to add visual decoration to the page.</li>
-        <li><b>Functional images: </b>Should describe the function of a link or button instead of the visual image.</li>
-        <li><b>Images of text: </b>Should contain the same words as in the image.</li>
-        <li><b>Complex images: </b>Such as graphs and diagrams: Alternative should provide a complete text equivalent of the data or information provided in the image.</li>
-        <li><b>Groups of images: </b>If multiple images convey a single piece of information, the text alternative for one image should convey the information for the entire group.</li>
-        <li><b>Image maps: </b>The text alternative for an image that contains multiple clickable areas should provide an overall context for the set of links.</li>
+        <li>The heading should describe the purpose or topic of the content that follows.</li>
+        <li>All text that looks like a heading is marked up as a heading.</li>
+        <li>The headings should correctly describe the structure of the document:</li>
       </ol>
-      <h2 className='test-fail'>Possible Failure</h2>
+      <ul className='heading-subpoints'>
+         <li>One H1 on the page</li>
+         <li>Subsections have H2 headings</li>
+         <li>Sub-subsections have H3 headings</li>
+         <li>Heading levels are not skipped - section heading with an H2 has subsections with H3, not H4 or H5</li>
+      </ul>
+      
+      <h2 className='test-fail'>Possible failures for Test 2</h2>
       <ul>
-        <li>Decorative images have non-null value for alt text</li>
-        <li>Image used as CAPTCHA lacks description</li>
-        <li>Image of meaningful text lacks alt text</li>
-        <li>Image of meaningful text has alt text that does not match the image text exactly</li>
-        <li>Meaningful image lacks alt text</li>
-        <li>Meaningful image has inappropriate or inadequate alt text</li>
+        <li>Heading doesn't describe the topic or content that follows</li>
+        <li>Visually apparent headings are not marked up has headings (no H1, H2, H3, etc tags)</li>
+        <li>Content that is marked up as a heading is styled to look like regular text</li>
+        <li>Headings fail to create a cohesive outline that describes the structure of the document - are used out of order, or heading levels are skipped.</li>
       </ul>
       <div className='test-btn'>
-        <button className='all-btn' onClick={openModal}>{isLoading ? 'Loading...' : 'Perform Image Testing'}</button>
+        <button className='all-btn' onClick={openModal}>{isLoading ? 'Loading...' : 'Perform Heading Test'}</button>
       </div>
       
  <Modal 
@@ -54,37 +56,37 @@ const TestHeading = () => {
         onRequestClose={closeModal}
         contentLabel="Modal"
       >
-        <h2>Image Test Result</h2>
+        <h2>Heading Test Result</h2>
         <div>
           <label className='label' htmlFor="page">Page1</label>
           <table className='table'>
             <thead>
               <tr>
-                <th>Image</th>
+                <th>Heading</th>
                 <th>Status</th>
                 <th>Reason</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Image1</td>
+                <td>Heading1</td>
                 <td className='failed'>Failed</td>
-                <td>Missing alt</td>
+                <td>Headings must be properly nested</td>
               </tr>
               <tr>
-                <td>Image2</td>
+                <td>Heading2</td>
+                <td className='failed'>Failed</td>
+                <td>Page must have h1 element</td>
+              </tr>
+              <tr>
+                <td>Heading5</td>
+                <td className='failed'>Failed</td>
+                <td>Doesn't  describe the purpose</td>
+              </tr>
+              <tr>
+                <td>Heading3</td>
                 <td>Passed</td>
                 <td>-</td>
-              </tr>
-              <tr>
-                <td>Image3</td>
-                <td>Passed</td>
-                <td>-</td>
-              </tr>
-              <tr>
-                <td>Image4</td>
-                <td className='failed'>Failed</td>
-                <td>Meaningless alt</td>
               </tr>
             </tbody>
           </table>
@@ -94,36 +96,37 @@ const TestHeading = () => {
           <table className='table'>
             <thead>
               <tr>
-                <th>Image</th>
+                <th>Heading</th>
                 <th>Status</th>
                 <th>Reason</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Image1</td>
-                <td>Passed</td>
-                <td>-</td>
-              </tr>
-              <tr>
-                <td>Image2</td>
-                <td>Passed</td>
-                <td>-</td>
-              </tr>
-              <tr>
-                <td>Image3</td>
-                <td>Passed</td>
-                <td>-</td>
+                <td>Heading3</td>
+                <td className='failed'>Failed</td>
+                <td>Headings must be properly nested</td>
               </tr>
                <tr>
-                <td>Image4</td>
-                <td className='failed'>Failed</td>
-                <td>Missing alt</td>
+                <td>Heading4</td>
+                <td>Passed</td>
+                <td>-</td>
               </tr>
+              <tr>
+                <td>Heading1</td>
+                <td className='failed'>Failed</td>
+                <td>Doesn't  describe the purpose</td>
+              </tr>
+              <tr>
+                <td>Heading5</td>
+                <td className='failed'>Failed</td>
+                <td>Doesn't  describe the purpose</td>
+              </tr>
+              
             </tbody>
           </table>
         </div>
-        <br />
+        <h4 className='failed'>Failed Test!</h4>
         <button className='all-btn' onClick={closeModal}>Close</button>
       </Modal>
     </div>

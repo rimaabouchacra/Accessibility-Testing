@@ -35,7 +35,7 @@ const TestImage = () => {
         <li><b>Groups of images: </b>If multiple images convey a single piece of information, the text alternative for one image should convey the information for the entire group.</li>
         <li><b>Image maps: </b>The text alternative for an image that contains multiple clickable areas should provide an overall context for the set of links.</li>
       </ol>
-      <h2 className='test-fail'>Possible Failure</h2>
+      <h2 className='test-fail'>Possible failures for Test 1</h2>
       <ul>
         <li>Decorative images have non-null value for alt text</li>
         <li>Image used as CAPTCHA lacks description</li>
@@ -123,7 +123,7 @@ const TestImage = () => {
             </tbody>
           </table>
         </div>
-        <br />
+        <h4 className='passed'>Passed Test!</h4>
         <button className='all-btn' onClick={closeModal}>Close</button>
       </Modal>
     </div>

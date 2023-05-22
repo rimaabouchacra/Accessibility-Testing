@@ -88,7 +88,7 @@ b{
     align-items: center;
     outline: none;
     align-content: center;
-    margin: 3rem;
+    margin: 1rem;
     margin-left: 18rem;
     margin-bottom: 10rem;
     background-color: white;
@@ -98,7 +98,7 @@ b{
     max-width: 50rem;
     width: 100%;
     overflow-y: auto;
-    max-height:32rem;
+    max-height:35rem;
 }
 .modal::-webkit-scrollbar {
     width: 10px;
@@ -148,6 +148,9 @@ td {
 
 .failed{
     color: red;
+}
+.passed{
+    color: #2BC45F;
 }
 @media only screen and (max-width: 990px) {
     .paragraph-img{

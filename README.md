@@ -55,7 +55,7 @@
 | Homepage screen | ImageTest screen |
 ![fsdaf](./readme/demo/HomePage.gif) | ![fsdaf](./readme/demo/ImageTest.gif) |
 | HeadingTest | LinkTest Screen 
-| ![Landing](./readme/demo/HeadingTest.gif) | ![fsdaf](./readme/demo/LinkTest.gif
+| ![Landing](./readme/demo/HeadingTest.gif) | ![fsdaf](./readme/demo/LinkTest.gif)
 
 
 <br><br>

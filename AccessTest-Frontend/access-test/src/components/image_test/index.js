@@ -30,6 +30,10 @@ const TestImage = () => {
         <li>Meaningful image lacks alt text</li>
         <li>Meaningful image has inappropriate or inadequate alt text</li>
       </ul>
+      <div className='test-btn'>
+        <button className='all-btn'>Perform Image Testing</button>
+      </div>
+      
     </div>
   );
 };

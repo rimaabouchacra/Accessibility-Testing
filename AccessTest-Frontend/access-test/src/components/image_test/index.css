@@ -76,6 +76,11 @@ b{
     background-clip: text;
     -webkit-background-clip: text;
 }
+.test-btn{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
 @media only screen and (max-width: 990px) {
     .paragraph-img{
         flex-direction: column;

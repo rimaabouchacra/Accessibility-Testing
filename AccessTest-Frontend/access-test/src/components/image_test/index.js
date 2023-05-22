@@ -22,6 +22,14 @@ const TestImage = () => {
         <li><b>Image maps: </b>The text alternative for an image that contains multiple clickable areas should provide an overall context for the set of links.</li>
       </ol>
       <h2 className='test-fail'>Possible Failure</h2>
+      <ul>
+        <li>Decorative images have non-null value for alt text</li>
+        <li>Image used as CAPTCHA lacks description</li>
+        <li>Image of meaningful text lacks alt text</li>
+        <li>Image of meaningful text has alt text that does not match the image text exactly</li>
+        <li>Meaningful image lacks alt text</li>
+        <li>Meaningful image has inappropriate or inadequate alt text</li>
+      </ul>
     </div>
   );
 };
